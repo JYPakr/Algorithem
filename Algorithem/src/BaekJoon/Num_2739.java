@@ -15,16 +15,22 @@ public class Num_2739 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int n = Integer.parseInt(br.readLine());
-		
+		int m = 1;
+		br.close();
 		//case 1
-		for (int i = 1; i <= 9; i++) {
-			
-			System.out.println(n + " * "+ i +" = " + (n* i));
+//		for (int i = 1; i <= 9; i++) {
+//			
+//			System.out.println(n + " * "+ i +" = " + (n* i));
+//		
+//		}
 		
+		//case 2
+		
+		while(m<10) {
+			System.out.println(n+" * "+m+" = " + n*m);
+			m ++;
 		}
-	
-	
+		
 	}
 
-	
 }

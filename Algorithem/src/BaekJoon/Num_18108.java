@@ -8,7 +8,7 @@ public class Num_18108 {
 		Scanner sc = new Scanner(System.in);
 		
 		int y = sc.nextInt();
-		
+	
 		
 		int y_y = y - 543;
 		

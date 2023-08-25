@@ -6,29 +6,26 @@ import java.io.IOException;
 
 
 
-public class Num_5597 {
+public class Num_9086 {
 	
 	public static void main(String[] args) throws IOException{
-
+		
 		//case 1
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	
 		
-		boolean arr[] = new boolean[31];
+		int T = Integer.parseInt(br.readLine());
 		
-		for (int i = 0; i < 28; i++) {
+		for (int i = 0; i < T; i++) {
+			String str = br.readLine();
+			System.out.println(str.charAt(0) +""+str.charAt(str.length() - 1));
 		
-			arr[Integer.parseInt(br.readLine())] = true;
-			
-		}
-		
-		for (int j = 1; j < arr.length; j++) {
-			if (!arr[j]) {
-				System.out.println(j);
-			}
 		}
 		
         br.close();
+        
+		
+  
+		
   
 	}
 }

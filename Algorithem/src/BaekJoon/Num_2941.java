@@ -12,15 +12,21 @@ public class Num_2941 {
 		BufferedReader br =  new BufferedReader(new InputStreamReader(System.in));
 		
 		
-		int T = Integer.parseInt(br.readLine());
-
-	
-		for (int i = 1; i <= T; i++) {
+		String str = br.readLine();
+		String[] cr = new String[] {"c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="};
+		int cnt = 0;
+		
+		for (int i = 0; i <= 7; i++) {
 			
-		
+			if(str.contains(cr[i])){
+				cnt ++;
+				
+			};
+			
 		}
-		
 		br.close();
+		
+		System.out.println(cnt);
 		
 	
 	}

@@ -1,11 +1,8 @@
 package BaekJoon;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class Num_2566 {
@@ -19,7 +16,8 @@ public class Num_2566 {
 		int max = 0;
 		
 		//행과 열 번호를 저장할 변수 선언
-		String xy = "";
+		int x = 0;
+		int y = 0;
 		
 		//행과 열에 입력값을 넣어줄 for문
 		for(int i = 1; i <= 9; i++) {
@@ -27,14 +25,16 @@ public class Num_2566 {
 			for(int j = 1; j <= 9; j++) {
 				int N = Integer.parseInt(st.nextToken());
 				
-				if(max < N) {
+				if(max < N || max == 0) {
 					max = N;
-					xy = String.valueOf(i) + " " + String.valueOf(j);
+					x = i;
+					y = j;
 				}
 			}
 		}
 		System.out.println(max);
-		System.out.println(xy);
+		System.out.println(x+" "+y);
+		  
 		
 		
 	}
